@@ -22,7 +22,7 @@ jobs:
         # run: git clone https://github.com/whoohoo86/gh-open-data-page.git
         uses: actions/checkout@v2
         with:
-          repository: 'whoohoo86/gh-open-data-page-geda'
+          repository: 'eckelmannf/gh-open-data-page-geda'
         
       - name: Create datasource.json
         uses: whoohoo86/gh-open-data-page-ds-action@master
