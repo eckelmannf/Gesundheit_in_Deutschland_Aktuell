@@ -7,7 +7,7 @@ on:
   workflow_dispatch: 
   # Triggers the workflow on push or pull request events but only for the master branch
   #push:
-  #  branches: [ master ]
+  #  branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,7 +22,7 @@ jobs:
         # run: git clone https://github.com/whoohoo86/gh-open-data-page.git
         uses: actions/checkout@v2
         with:
-          repository: 'whoohoo86/gh-open-data-page'
+          repository: 'whoohoo86/gh-open-data-page-geda'
         
       - name: Create datasource.json
         uses: whoohoo86/gh-open-data-page-ds-action@master
